@@ -9,6 +9,16 @@ h1 {
 legend {
   padding-right: 1rem;
 }
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.address {
+  height: 4em;
+}
+
 @media only screen and (min-width: 60em) {
 
   .age, .email {

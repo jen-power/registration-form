@@ -13,49 +13,53 @@
 <body>
 
   <section>
-    <div class="island pad-t-2">
-      <h1 class="not-bold pad-t">Want to go to Mars?</h1>
-      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <div class="gutter pad-t-2 pad-b-2">
 
-      <form>
+      <form class="max-length">
+        <h1 class="not-bold">Want to go to Mars?</h1>
+        <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+
         <fieldset>
           <legend class="giga italic not-bold push">Personal details</legend>
-          <div class="push">
-            <label for="name">Name</label>
-            <input id="name">
-          </div>
-          <div class="push">
-            <label for="age" class="age">Age</label>
-            <input id="age">
-          </div>
-          <div class="push">
-            <label for="email" class="email">Email</label>
-            <input id="email" name="email">
-          </div>
-          <div class="push">
-            <label for="fitness">Physical fitness</label>
-            <select id="fitness">
-              <option>Super-human</option>
-              <option>Fit as a fiddle</option>
-              <option>Not terribly strong</option>
-              <option>A little couch-potato-y</option>
-            </select>
+          <div class="grid">
+            <div class="push unit unit-xs-1 unit-l-1-2">
+              <label for="name">Name</label>
+              <input id="name">
+            </div>
+            <div class="push unit unit-xs-1 unit-l-1-2">
+              <label for="age" class="age">Age</label>
+              <input id="age">
+            </div>
+            <div class="push unit unit-xs-1 unit-l-1-2">
+              <label for="email" class="email">Email</label>
+              <input id="email" name="email">
+            </div>
+            <div class="push unit unit-xs-1 unit-l-1-2">
+              <label for="fitness">Physical fitness</label>
+              <select id="fitness">
+                <option>Super-human</option>
+                <option>Fit as a fiddle</option>
+                <option>Not terribly strong</option>
+                <option>A little couch-potato-y</option>
+              </select>
+            </div>
           </div>
           <div class="push">
             <label for="address">Address</label>
-            <input id="address">
+            <input id="address" class="address">
           </div>
         </fieldset>
 
         <fieldset>
           <legend class="giga italic not-bold push">Mission statement</legend>
-          <div>
+          <div class="push">
             <label for="message">Why do you want to go to Mars?</label>
             <textarea id="message" required></textarea>
           </div>
         </fieldset>
-
-        <button type="submit">Register for the trip!</button>
+        <div class="text-center">
+          <button type="submit" class="btn">Register for the trip!</button>
+        </div>
         <input type="hidden" name="_subject" value="Request to join the mission">
 
       </form>
