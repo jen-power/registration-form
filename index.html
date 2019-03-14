@@ -15,7 +15,7 @@
   <section>
     <div class="gutter pad-t-2 pad-b-2">
 
-      <form class="max-length">
+      <form class="max-length" method="POST" action="https://formspree.io/powe0309@algonquinlive.com">
         <h1 class="not-bold">Want to go to Mars?</h1>
         <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
@@ -36,7 +36,7 @@
             </div>
             <div class="push unit unit-xs-1 unit-l-1-2">
               <label for="fitness">Physical fitness</label>
-              <select id="fitness">
+              <select id="fitness" name="name">
                 <option>Super-human</option>
                 <option>Fit as a fiddle</option>
                 <option>Not terribly strong</option>
@@ -54,7 +54,7 @@
           <legend class="giga italic not-bold push">Mission statement</legend>
           <div class="push">
             <label for="message">Why do you want to go to Mars?</label>
-            <textarea id="message" required></textarea>
+            <textarea id="message" name="name" required></textarea>
           </div>
         </fieldset>
         <div class="text-center">
